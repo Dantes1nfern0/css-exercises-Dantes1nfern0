@@ -1,10 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  /* outline: 1px solid red; */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
 
 body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  list-style-type: none;
+}
+
+/* removes dots from lists */
+li {
+  list-style-type: none;
+}
+ 
+/* removes underline from lists and makes them black */
+a {
+  text-decoration: none;
+  color: rgb(106, 103, 103);
 }
 
 img {
@@ -24,3 +49,64 @@ input {
   padding: 8px 24px;
   width: 400px;
 }
+
+/* Answer Attempt */
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+
+.header {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 15px;
+}
+
+.header ul {
+  display: flex;
+  gap: 10px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+
+button {
+  padding: 8px 18px;
+}
+
+.footer {
+  width: auto;
+  height: auto;
+  background: #eeeeee;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 15px;
+}
+
+.footer ul {
+  display: flex;
+  gap: 10px;
+}
+
+
+
+
+
